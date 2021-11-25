@@ -8,7 +8,7 @@ from pydantic import BaseModel
 
 class ParameterKind(Enum):
     TOPIC = 'topic'
-    CONSTANT = 'constant',
+    CONSTANT = 'constant'
     COMPUTED = 'computed'
 
 
