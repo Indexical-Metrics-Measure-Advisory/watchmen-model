@@ -1,5 +1,5 @@
 from enum import Enum
-from typing import List, Any
+from typing import List, Any, Optional
 
 from pydantic import BaseModel
 
@@ -52,7 +52,7 @@ class ReportFunnel(BaseModel):
     type: ReportFunnelType = None
     range: bool = False
     enabled: bool = False
-    values: List[str] = None
+    values: List[Optional[str]] = None
 
 
 class ReportRect(BaseModel):
